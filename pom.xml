@@ -36,7 +36,7 @@
         <module>itph-ejb</module>
         <module>itph-web</module>
         <module>itph-ear</module>
-        <module>uiintegration</module>
+        
     </modules>
 
     <properties>
