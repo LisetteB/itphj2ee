@@ -59,6 +59,8 @@ public class Member implements Serializable {
     @Digits(fraction = 0, integer = 12)
     @Column(name = "phone_number")
     private String phoneNumber;
+    
+    private String nickname;
 
     public Long getId() {
         return id;
@@ -74,6 +76,14 @@ public class Member implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+    
+    public String getNickname(){
+    	return nickname;
+    }
+    
+    public void setNickname(String nickname){
+    	this.nickname = nickname;
     }
 
     public String getEmail() {
