@@ -86,6 +86,7 @@ public class Member implements Serializable {
     	this.nickname = nickname;
     }
 
+
     public String getEmail() {
         return email;
     }

@@ -27,7 +27,7 @@
 
     <artifactId>itph-ejb</artifactId>
     <packaging>ejb</packaging>
-
+    
     <name>itph: EJB Module</name>
 
     <url>http://wildfly.org</url>
@@ -43,7 +43,9 @@
 
         <!-- Declare the APIs we depend on and need for compilation. All of 
             them are provided by JBoss WildFly -->
-
+	
+	
+	
         <!-- Import the EJB API, we use provided scope as the API is included in JBoss WildFly -->
         <dependency>
             <groupId>org.jboss.spec.javax.ejb</groupId>
@@ -74,12 +76,13 @@
             <scope>provided</scope>
         </dependency>
 
-
+		
         <!-- Test scope dependencies -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <scope>test</scope>
+            <version>4.12</version>
         </dependency>
 
         <!-- Optional, but highly recommended -->
